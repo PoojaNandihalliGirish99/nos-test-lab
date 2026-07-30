@@ -1,0 +1,12 @@
+devices:
+  r1:
+    os: linux
+    type: router
+
+  r2:
+    os: linux
+    type: router
+
+  r3:
+    os: linux
+    type: router

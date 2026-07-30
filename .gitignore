@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env (if you create later)
+venv/
+.env/
+
+# pyATS logs
+*.log
+*.html
+archive/
+
+# Containerlab runtime
+clab-*/
+topology/clab-*/
+
+# OS files
+.DS_Store
+
+# VSCode
+.vscode/
+
+# temp files
+*.swp
+*.tmp

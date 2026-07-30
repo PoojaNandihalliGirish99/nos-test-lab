@@ -1,0 +1,25 @@
+name: frr-lab
+
+topology:
+  nodes:
+    r1:
+      kind: linux
+      image: frrouting/frr:latest
+      binds:
+        - ./frr-configs/r1:/etc/frr
+
+    r2:
+      kind: linux
+      image: frrouting/frr:latest
+      binds:
+        - ./frr-configs/r2:/etc/frr
+
+    r3:
+      kind: linux
+      image: frrouting/frr:latest
+      binds:
+        - ./frr-configs/r3:/etc/frr
+
+  links:
+    - endpoints: ["r1:eth1", "r2:eth1"]
+    - endpoints: ["r2:eth2", "r3:eth1"]
